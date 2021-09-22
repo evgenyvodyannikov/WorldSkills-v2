@@ -22,7 +22,9 @@ namespace WorldSkills
     {
         public Page()
         {
+            Agent agent = new Agent();
             InitializeComponent();
+
         }
     }
 }

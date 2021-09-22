@@ -16,22 +16,19 @@ using System.Windows.Shapes;
 namespace WorldSkills
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AgentUC.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AgentUC : UserControl
     {
-        
-        DataBase DB = new DataBase();
-
-        public MainWindow()
+        public AgentUC(Agent agent)
         {
-            
             InitializeComponent();
-            DB.OpenConnection();
-            AgentUC agentUC = new AgentUC(DB.agent);
-            MainStackPanel.Children.Add(agentUC);
-            //121212
+
+            TypeName.Text = agent.Type + " | " + agent.Name;
+            Sales.Text = agent.Sales;
+            PhoneNumber.Text = agent.PhoneNumber;
+            Priority.Text = agent.Priority;
+            Discount.Text = agent.Discount;
         }
     }
 }
-

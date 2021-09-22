@@ -9,6 +9,10 @@ namespace WorldSkills
 {
     class DataBase
     {
+
+        public Agent agent = new Agent();
+
+
         string connectionString;
         SqlConnection connection;
 
@@ -18,6 +22,7 @@ namespace WorldSkills
             + "Integrated Security=True";
             connection = new SqlConnection(connectionString);
             connection.Open();
+            agent.Name = "111";
         }
 
         public void CloseConnection()

@@ -9,9 +9,12 @@
     <Grid Background="AliceBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="470"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Canvas Grid.Row="0" Background="#C6D7FF "></Canvas>
-        <StackPanel Grid.Row="1" Background="#ffff"></StackPanel>
+        <StackPanel x:Name="MainStackPanel" Grid.Row="1" Background="#ffff">
+        </StackPanel>
+        <Canvas Background="#ffff" Grid.Row="2"></Canvas>
     </Grid>
 </Window>

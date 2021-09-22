@@ -12,7 +12,7 @@ namespace WorldSkills
         string connectionString;
         SqlConnection connection;
 
-        void OpenConnection()
+        public void OpenConnection()
         {
             connectionString = @"Data Source=SQLDEM\SQLDEM;Initial Catalog=pr1-22-vodyannikoves_WorldSkills;"
             + "Integrated Security=True";
@@ -20,7 +20,7 @@ namespace WorldSkills
             connection.Open();
         }
 
-        void CloseConnection()
+        public void CloseConnection()
         {
             connection.Close();
         }

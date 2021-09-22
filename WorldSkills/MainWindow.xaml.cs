@@ -20,10 +20,12 @@ namespace WorldSkills
     /// </summary>
     public partial class MainWindow : Window
     {
+        DataBase DB = new DataBase();
 
         public MainWindow()
         {
             InitializeComponent();
+            DB.OpenConnection();
            //121212
         }
     }

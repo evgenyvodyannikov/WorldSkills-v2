@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorldSkills"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-        
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Canvas Grid.Row="0" Background="#C6D7FF "></Canvas>
+        <StackPanel Grid.Row="1" Background="#ffff"></StackPanel>
     </Grid>
 </Window>
